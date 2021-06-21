@@ -1,0 +1,99 @@
+body{
+
+    margin: 0;
+    padding: 0;
+    background-image: url(/imgs/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    color: black;
+    font-family: "principal";
+    font-size: 1.5rem;
+}
+
+@font-face {
+    font-family: principal;
+    src: url(/font/certa\ sans\ medium.ttf);
+}
+
+.conteudo{
+
+    margin: auto;
+    width: 100%;
+    max-width: 450px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 10px 10px 20px gray;
+    padding: 55px;
+    border-radius: 20px;
+}
+
+.topo {
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+
+}
+
+.topo input{
+
+    width: 350px;
+    padding: 15px;
+    outline: none;
+    border-radius: 12px;
+    border: 1px solid gray;
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.topo button{
+    width: 45px;
+    border-radius: 12px;
+    border: 1px solid gray;
+    background-color: rgba(255, 255, 255, 1);
+    outline: none;
+}
+
+.topo button:hover{
+
+    background-color: rgba(200, 200, 200, 0.5);
+    cursor: pointer;
+}
+
+#listadetarefas{
+
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#listadetarefas li {
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    display: inline-block;
+    width: 90%;
+    align-items: center;  
+    
+      
+}
+
+.btnacao{
+    border-radius: 20px;
+    border: 1px solid gray;
+    width: 38px;
+    height: 38px;
+    outline: none;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.btnacao:hover{
+
+    background-color: rgba(200, 200, 200, 0.5);
+
+}
+

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,49 @@
     <title>To Do List</title>
     <link rel="stylesheet" href="/stilo/style.css">
     <link rel="icon" href="/imgs/icons8-lista-de-tarefas-100.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <script src="/scriptjs/script.js"></script>
 
-    
+    <div class="conteudo">
+        <div class="topo">
+
+            <input type="text" id="novatarefa" placeholder="Adicionar Nova Tarefa">
+
+            <button id="btnaddtarefa">
+                <i class="fa fa-plus"></i>
+            </button>
+
+        </div>
+
+        <ul id="listadetarefas">
+
+            <li>
+
+                <span class="textotarefa">Tarefa</span>
+
+                <button class="btnacao">
+
+                    <i class="fa fa-pencil"></i>
+
+                </button>
+
+                <button class="btnacao">
+
+                    <i class="fa fa-trash"></i>
+
+                </button>
+
+            </li>
+
+        </ul>
+
+
+    </div>
 
 
 </body>
+
 </html>
