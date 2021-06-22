@@ -46,6 +46,7 @@ body{
     border: 1px solid gray;
     font-size: 1.2rem;
     background-color: rgba(255, 255, 255, 1);
+    box-shadow: 10px 10px 20px gray;
 }
 
 .topo button{
@@ -67,6 +68,8 @@ body{
     list-style-type: none;
     padding: 0;
     margin: 0;
+    box-shadow: 10px 10px 20px gray;
+    border-radius: 12px;
 }
 
 #listadetarefas li {
@@ -76,7 +79,6 @@ body{
     display: inline-block;
     width: 90%;
     align-items: center;  
-    
       
 }
 
