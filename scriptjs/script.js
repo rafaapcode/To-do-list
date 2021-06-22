@@ -1,5 +1,5 @@
 // Criar a tarefa
-const criarItem = (text, status) => {
+const criarItem = (text, status="") => {
 
     const item = document.createElement("label");
     item.classList.add("todo__item");
