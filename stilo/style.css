@@ -89,6 +89,7 @@ body{
     float: right;
     margin-right: 10px;
     cursor: pointer;
+    background: white;
 }
 
 .btnacao:hover{
