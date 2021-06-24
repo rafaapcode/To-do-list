@@ -1,7 +1,7 @@
 // Vamos simular um Banco de dados.
 let banco = [
-    {"tarefa": "Estudar JS", "status": ""},
-    {"tarefa": "Estudar FX", "status": "checked"}
+    { "tarefa": "Estudar JS", "status": "" },
+    { "tarefa": "Estudar FX", "status": "" }
 ];
 
 
@@ -20,7 +20,7 @@ const criarItem = (tarefa, status) => {
 const limpartarefas = () => {
 
     const todo_list = document.getElementById("todoList");
-    while(todoList.firstChild){
+    while (todoList.firstChild) {
         todoList.removeChild(todoList.lastChild);
     }
 
@@ -28,13 +28,28 @@ const limpartarefas = () => {
 
 // Vamos crar uma função para ler nosso "Banco de dados", e criar um item para cada objeto dentro do ARRAY
 // Toda hora que mudarmos algo no "Banco de dados", essa função vai mandar atualizar a tela do navegador.
-const rendertela = ()=>{
+const rendertela = () => {
     limpartarefas();
     banco.forEach(item => criarItem(item.tarefa, item.status));
 
 }
 
-rendertela();
-
 // Quando a pessoa apertar ENTER na caixinha, ele criar mais um objeto no banco e atualiza a tela.
+const additem = (evento) => {
 
+    const tecla = evento.key;
+    
+    const texto = evento.target.value;
+    
+    if (tecla === "Enter") {
+        banco.push({ "tarefa": texto, "status": "" });
+        
+        evento.target.value = "";
+        
+        rendertela();
+    };
+};
+
+document.getElementById("colocartarefa").addEventListener("keypress", additem);
+
+rendertela();
