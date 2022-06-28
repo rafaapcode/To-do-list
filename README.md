@@ -1,5 +1,7 @@
 # To-do-list
 
+- Criar um ToDoList para praticar os conceitos de JS aprendidos no curso.
+
 https://user-images.githubusercontent.com/83471941/123514986-0d20d680-d66c-11eb-88bb-bc657a797525.mp4
 
 https://user-images.githubusercontent.com/83471941/123515050-64bf4200-d66c-11eb-8a39-162e778b660e.mp4
